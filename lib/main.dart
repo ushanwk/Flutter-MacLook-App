@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sample_app_1/screens/welcome_screen.dart';
 
-const Color accent = Color.fromRGBO(68, 123, 121, 100);
+const Color accent = Color(0xFF447BDD);
 
 void main(){
   runApp(MyApp());
