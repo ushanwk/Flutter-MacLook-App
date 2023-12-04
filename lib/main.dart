@@ -4,7 +4,7 @@ import 'package:sample_app_1/screens/welcome_screen.dart';
 const Color accent = Color(0xFF447BDD);
 
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: accent),
         useMaterial3: true,
       ),
-      home: const welcome_screen(),
+      home: const WelcomeScreen(),
     );
   }
 }
