@@ -30,6 +30,16 @@ class _LoginScreenState extends State<LoginScreen> {
             top: 80,
             child: loginScreenImg(),
           ),
+          const Positioned(
+            top: 410,
+            child: Text(
+              "Let's Sign You In",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 35,
+              ),
+            ),
+          )
         ],
       ),
     );
