@@ -52,6 +52,20 @@ class WelcomeScreenState extends State<WelcomeScreen> {
             ),
           ),
         ),
+        Positioned(
+          top: 190,
+            child: ElevatedButton(
+                onPressed: (){},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: accent,
+                fixedSize: const Size(150, 50),
+              ),
+                child: const Text(
+                    'Sign In',
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                ),
+            )
+        ),
       ],
     );
   }
