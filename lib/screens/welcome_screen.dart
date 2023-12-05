@@ -58,11 +58,11 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                 onPressed: (){},
               style: ElevatedButton.styleFrom(
                 backgroundColor: accent,
-                fixedSize: const Size(150, 50),
+                fixedSize: const Size(175, 50),
               ),
                 child: const Text(
                     'Sign In',
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
             )
         ),
@@ -77,6 +77,22 @@ class WelcomeScreenState extends State<WelcomeScreen> {
             ),
           ),
         ),
+        Positioned(
+          top: 265,
+          child: GestureDetector(
+            onTap: () {
+
+            },
+            child: const Text(
+              'Create Account',
+              style: TextStyle(
+                fontSize: 15.0,
+                color: accent,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        )
       ],
     );
   }
