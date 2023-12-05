@@ -8,10 +8,30 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+
+  Widget loginScreenImg(){
+    return SizedBox(
+      height: 300,
+      child: Image.asset(
+        "assets/login_screen_bg.jpg",
+        fit: BoxFit.cover,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          Positioned(
+            top: 80,
+            child: loginScreenImg(),
+          ),
+        ],
+      ),
     );
   }
 }
