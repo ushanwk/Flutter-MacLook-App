@@ -20,7 +20,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
     );
   }
 
-  Widget welcomeScreenTwoTexts(){
+  Widget welcomeScreenDownPart(){
     return Stack(
       alignment: Alignment.center,
       children: <Widget>[
@@ -53,7 +53,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
           ),
         ),
         Positioned(
-          top: 190,
+          top: 170,
             child: ElevatedButton(
                 onPressed: (){},
               style: ElevatedButton.styleFrom(
@@ -65,6 +65,17 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                   style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
             )
+        ),
+        const Positioned(
+          top: 250,
+          child: Text(
+            'Do yo have not a Account ?',
+            style: TextStyle(
+                fontSize: 10.0,
+                fontFamily: 'Helvetica',
+                fontWeight: FontWeight.bold
+            ),
+          ),
         ),
       ],
     );
@@ -78,7 +89,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
           welcomeScreenImg(),
            Expanded(
             child: Center(
-              child: welcomeScreenTwoTexts(),
+              child: welcomeScreenDownPart(),
             ),
           ),
         ],
