@@ -9,6 +9,8 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
 
+  final GlobalKey<FormState> _formKeyLogin = GlobalKey<FormState>();
+
   Widget loginScreenImg(){
     return SizedBox(
       height: 300,
@@ -39,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ),
         const Positioned(
-          top: 470,
+          top: 460,
           width: 360,
           child: Text(
             "Sign in with your data that you have entered during your Registration.",
@@ -47,10 +49,14 @@ class _LoginScreenState extends State<LoginScreen> {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
-
+              color: Colors.black38,
             ),
           ),
-        )
+        ),
+        Positioned(
+          top: 600,
+         child: Text("AAA"),
+        ),
       ],
     );
   }
