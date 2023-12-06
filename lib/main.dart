@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sample_app_1/screens/login_screen.dart';
-import 'package:sample_app_1/screens/welcome_screen.dart';
 
 const Color accent = Color(0xFF447BDD);
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: accent),
         useMaterial3: true,
       ),
-      home: const WelcomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }

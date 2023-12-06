@@ -28,6 +28,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
           top: 50,
           child: Text(
             'Welcome',
+            textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 40.0,
                 fontFamily: 'Helvetica'
@@ -38,6 +39,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
           top: 64.0,
           child: Text(
             'MacLook',
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 55.0,
               fontWeight: FontWeight.bold,
